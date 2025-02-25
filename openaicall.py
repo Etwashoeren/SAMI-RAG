@@ -4,7 +4,7 @@ class LlmClient():
     def __init__(self):
 
         self.client = OpenAI(
-            api_key="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",
+            api_key="[API-KEY]",
         )
         self.model = "gpt-4o-mini"
 
