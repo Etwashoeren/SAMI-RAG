@@ -18,7 +18,7 @@ embedding_data = torch.load('data.pt')
 df = pd.read_json('data2.json')
 
 
-def find_best_matches(question, top_n=3):
+def find_best_matches(question, top_n=2):
     """ 입력된 질문과 가장 유사한 질문을 찾아 top_n 개의 답변을 반환 """
     question = question.replace(" ", "")
     sentence_encode = model.encode(question)
